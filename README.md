@@ -4,6 +4,6 @@
 
 
 - 👯 I’m looking to collaborate on =  UE5 Game Development
-- 🤔 I’m looking for help with     =  3D model & texture assets
+- 🤔 I’m looking for help with     =  3D modeling & texture assets
 - 📫 How to reach me:                 Michel.dougie@gmail.com
 
