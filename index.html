@@ -5,40 +5,539 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <link rel="icon" type="image/png" href="./src/favicon.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./glide.core.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <!-- Add additional meta tags and scripts here (e.g., Google Analytics, SEO meta tags) -->
+    <title>Portfolio Joseph Duguay</title>
 </head>
 
 
 
+<!-- NAV BAR -->
 <body>
-    <!-- Your site's content goes here -->
-    <header>
-        Temporary commit to initialize github pages
-    </header>
-
-
     <nav>
-        <!-- Navigation -->
+        <div class="container">
+            <div class="navbar" id="navbar">
+                <div class="link">
+                    <a data-scroll="home" href="#home" class="menu"><i class="fa fa-2x fa-home home active"></i></a>
+                    <a href="#home"><span class="tooltip">Home</span></a>
+                </div>
+                <div class="link">
+                    <a data-scroll="skill"href="#skill" class="menu"><i class="fa fa-2x fa-code skill"></i></a>
+                    <a href="#skill"><span class="tooltip">Skills</span></a>
+                </div>
+                <div class="link">
+                    <a data-scroll="projects"href="#projects" class="menu"><i class="fa fa-2x fa-desktop projects"></i></a>
+                    <a href="#projects"><span class="tooltip">Projects</span></a>
+                </div>
+            </div>
+        </div>
     </nav>
+<!-- NAV BAR -->
 
 
-    <main>
-        <!-- Main content -->
-    </main>
 
 
-    <footer>
-        <!-- Footer content -->
-    </footer>
-    
 
-    <!-- JavaScript Files -->
-    <script src="index.js"></script>
 
+<!-- HOME -->
+    <section id="home">
+        <div class="title">
+            <div class="intro">
+                <div data-aos="slide-right" class="text">
+                    <div class="numbers">
+                        <p>35</p>
+                        <p>36</p>
+                        <p>37</p>
+                        <p>38</p>
+                        <p class="lastNumber">39</p>
+                    </div>
+                    <div class="line">
+                        <hr>
+                    </div>
+                    <div class="name"><h3 id="name">Hi, I am</h3>
+                        <h3 id="name">Joseph Duguay</h3>
+                        <h3><span id="spec">Computer</span> Technician</h3>
+                        <h3>from <span id="spec">Toronto, Ontario</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#skill" class="arrow-container">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </a>
+
+
+
+
+        <div class="info-container">
+
+            <div data-aos="slide-left" class="aboutme">
+
+                    <header>
+                      <h2 class="h2 article-title">About me</h2>
+                    </header>
+                      <p>
+                        Passionate and aspiring Cyber Security Consultant. 
+                      </p>
+
+                      <article class="resume" data-page="resume">
+                
+                        <section class="timeline">
+                
+                          <div class="title-wrapper">
+                            <div class="icon-box">
+                              <ion-icon name="book-outline"></ion-icon>
+                            </div>
+                
+                            <h3 class="h3">Education</h3>
+                          </div>
+                
+                          <ol class="timeline-list">
+                
+                            <li class="timeline-item">
+                              <h4 class="h4 timeline-item-title">George Brown School of Computer Technology</h4>
+                              <span>September 2022 — December 2023</span>
+                              <p class="timeline-text">
+                                Cumilative GPA: 3.75 
+                              </p>
+                            </li>
+
+                            <li class="timeline-item">
+                              <h4 class="h4 timeline-item-title">CompTIA A+ Certificate</h4>
+                              <span>Expected 2024</span>
+                              <p class="timeline-text">
+                                CompTIA A+ identifies the go-to person in end point management and technical support roles and is the Industry Standard for Establishing a Career in IT.
+                              </p>
+                            </li>
+                
+
+                
+                          </ol>
+                
+                        </section>
+                
+                        <!-- <section class="timeline">
+                          <div class="title-wrapper">
+                            <div class="icon-box">
+                              <ion-icon name="book-outline"></ion-icon>
+                            </div>
+                
+                            <h3 class="h3">Experience</h3>
+                          </div>
+                
+                          <ol class="timeline-list">
+                
+                            <li class="timeline-item">
+                
+                              <h4 class="h4 timeline-item-title">Creative director</h4>
+                
+                              <span>2015 — Present</span>
+                
+                              <p class="timeline-text">
+                                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                                molestias
+                                exceptur.
+                              </p>
+                            </li>
+                          </ol>
+                        </section> -->
+
+                </article>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="skill" class="sections">
+        <div class="heading">
+            <h2>Skills</h2>
+        </div>
+        <div class="content">
+            <div data-aos="slide-left" class="left">
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fab fa-4x fa-python"></i>
+                    </div>
+                    <p>Python</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fab fa-4x fa-linux"></i>
+                    </div>
+                    <p>Bash</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fa fa-database fa-4x"></i>
+                    </div>
+                    <p>MongoDB</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fa fa-code fa-4x"></i>
+                    </div>
+                    <p>C&C++</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fa fa-cloud fa-4x"></i>
+                    </div>
+                    <p>AWS Cloud</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fab fa-docker fa-4x"></i>
+                    </div>
+                    <p>Docker</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fab fa-windows fa-4x"></i>
+                    </div>
+                    <p>AD & Server 2016</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fab fa-4x fa-html5"></i>
+                    </div>
+                    <p>HTML 5</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fab fa-4x fa-css3-alt"></i>
+                    </div>
+                    <p>CSS 3</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fab fa-4x fa-js-square"></i>
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fab fa-4x fa-git-alt"></i>
+                    </div>
+                    <p>Git</p>
+                </div>
+
+                
+            </div>
+            <div data-aos="slide-right" class="left">
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fas fa-4x fa-calendar-alt"></i>
+                    </div>
+                    <p>Time Management</p>
+                </div>
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fas fa-4x fa-puzzle-piece"></i>
+                    </div>
+                    <p>Adaptability</p>
+                </div>
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fas fa-4x fa-user-friends"></i>
+                    </div>
+                    <p>Team Work</p>
+                </div>
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fas fa-4x fa-palette"></i>
+                    </div>
+                    <p>Creativity</p>
+                </div>
+                <div class="skill-i">
+                    <div class="icon">
+                        <i class="fas fa-4x fa-chalkboard-teacher"></i>
+                    </div>
+                    <p>Curiosity</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-mobile">
+            <div class="left images glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+
+                        <li class="glide__slide"></li>
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fab fa-4x fa-python"></i>
+                                </div>
+                                <p>Python</p>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fab fa-4x fa-linux"></i>
+                                </div>
+                                <p>Bash</p>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fa fa-database fa-4x"></i>
+                                </div>
+                                <p>MongoDB</p>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fa fa-code fa-4x"></i>
+                                </div>
+                                <p>C&C++</p>
+                            </div>
+            
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fa fa-cloud fa-4x"></i>
+                                </div>
+                                <p>AWS Cloud</p>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fab fa-docker fa-4x"></i>
+                                </div>
+                                <p>Docker</p>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fab fa-windows fa-4x"></i>
+                                </div>
+                                <p>AD & Server 2016</p>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fab fa-4x fa-html5"></i>
+                                </div>
+                                <p>HTML 5</p>
+                            </div>
+                        </li>
+            
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fab fa-4x fa-css3-alt"></i>
+                                </div>
+                                <p>CSS 3</p>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fab fa-4x fa-js-square"></i>
+                                </div>
+                                <p>JavaScript</p>
+                            </div>
+                        </li>
+            
+                        <li class="glide__slide">
+                            <div class="skill-i">
+                                <div class="icon">
+                                    <i class="fab fa-4x fa-git-alt"></i>
+                                </div>
+                                <p>Git</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                
+        </div>
+        <div class="left hard glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="skill-i">
+                            <div class="icon">
+                                <i class="fas fa-4x fa-calendar-alt"></i>
+                            </div>
+                            <p>Time Management</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="skill-i">
+                            <div class="icon">
+                                <i class="fas fa-4x fa-puzzle-piece"></i>
+                            </div>
+                            <p>Adaptability</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="skill-i">
+                            <div class="icon">
+                                <i class="fas fa-4x fa-user-friends"></i>
+                            </div>
+                            <p>Team Work</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="skill-i">
+                            <div class="icon">
+                                <i class="fas fa-4x fa-palette"></i>
+                            </div>
+                            <p>Creativity</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="skill-i">
+                            <div class="icon">
+                                <i class="fas fa-4x fa-chalkboard-teacher"></i>
+                            </div>
+                            <p>Curiosity</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="sections">
+        <div class="heading">
+            <h2>Projects</h2>
+        </div>
+        <div class="content">
+            <div data-aos="fade-up" class="card-full">
+                <a href="https://OxMichel.github.io/TreadmillPi" target="#">
+                    <div class="card TreadmillPi">
+                        <div class="card-content">
+                            <h2 class="card-title">Treadmill Controller</h2>
+                            <p class="card-body">Treadmill & Raspberry Pi3</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-up" class="card-full">
+                <a href="https://OxMichel.github.io/TwitStocks" target="#">
+                    <div class="card TwitStocks">
+                        <div class="card-content">
+                            <h2 class="card-title">Twitter Stocks</h2>
+                            <p class="card-body">Stock analysis with Twitter</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-up" class="card-full">
+                <a href="https://OxMichel.github.io/ping-coming-soon-page-master/" target="#">
+                    <div class="card coming">
+                        <div class="card-content">
+                            <h2 class="card-title">Coming soon</h2>
+                            <p class="card-body">Mockup product release page</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-up" class="card-full">
+                <a href="https://OxMichel.github.io/ping-coming-soon-page-master/" target="#">
+                    <div class="card coming">
+                        <div class="card-content">
+                            <h2 class="card-title">Coming soon</h2>
+                            <p class="card-body">Mockup product release page</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-up" class="card-full">
+                <a href="https://OxMichel.github.io/ping-coming-soon-page-master/" target="#">
+                    <div class="card coming">
+                        <div class="card-content">
+                            <h2 class="card-title">Coming soon</h2>
+                            <p class="card-body">Mockup product release page</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-up" class="card-full">
+                <a href="https://OxMichel.github.io/ping-coming-soon-page-master/" target="#">
+                    <div class="card coming">
+                        <div class="card-content">
+                            <h2 class="card-title">Coming soon</h2>
+                            <p class="card-body">Mockup product release page</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-aos="fade-up" class="card-full">
+                <a href="https://OxMichel.github.io/ping-coming-soon-page-master/" target="#">
+                    <div class="card coming">
+                        <div class="card-content">
+                            <h2 class="card-title">Coming soon</h2>
+                            <p class="card-body">Mockup product release page</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="footer" class="sections">
+        <div class="contact">
+            <a href="https://github.com/OxMichel/" target="#"><i class="fab fa-3x fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/joseph-duguay-733677275/" target="#"><i class="fab fa-3x fa-linkedin"></i></a>
+            <a href="mailto:joseph.duguay@outlook.ca"><i class="fas fa-3x fa-envelope-square"></i></a>
+        </div>
+    </section>
+    <script type="module" src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        AOS.init({duration: 700});
+        new Glide(".images", {
+    type: 'carousel',
+    perView: 6,
+    autoplay: 1000,
+    hoverpause: false
+}).mount();
+new Glide(".hard", {
+    type: 'carousel',
+    perView: 5,
+    autoplay: 1200,
+    hoverpause: false
+}).mount();
+    </script>
 </body>
-
 </html>
