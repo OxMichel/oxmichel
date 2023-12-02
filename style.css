@@ -129,7 +129,7 @@ body {
   border-radius: 25px;
   padding: 1.5%;
 
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 
@@ -168,77 +168,6 @@ body {
 .title .lastNumber {
   display: none;
 }
-
-
-
-
-
-
-.arrow-container {
-  z-index: 2;
-  display: block;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateZ(0deg);
-}
-.arrow-container:hover {
-  cursor: pointer;
-}
-.arrow-container:hover .arrow {
-  top: 50%;
-}
-.arrow-container:hover .arrow:before {
-  transform: translate(-50%, -50%) rotateZ(-30deg);
-}
-.arrow-container:hover .arrow:after {
-  transform: translate(-50%, -50%) rotateZ(30deg);
-}
-.arrow {
-  position: absolute;
-  left: 50%;
-  transition: all 0.4s ease;
-}
-.arrow:before, .arrow:after {
-  transition: all 0.4s ease;
-  content: "";
-  display: block;
-  position: absolute;
-  transform-origin: bottom right;
-  background: white;
-  width: 0.2em;
-  height: 2em;
-  border-radius: 10px;
-  transform: translate(-50%, -50%) rotateZ(-45deg);
-}
-.arrow:after {
-  transform-origin: bottom left;
-  transform: translate(-50%, -50%) rotateZ(45deg);
-}
-.arrow:nth-child(1) {
-  opacity: 0.3;
-  top: 35%;
-}
-.arrow:nth-child(2) {
-  opacity: 0.6;
-  top: 55%;
-}
-.arrow:nth-child(3) {
-  opacity: 0.9;
-  top: 75%;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -348,21 +277,6 @@ section:not(#header) {
 section:not(#footer) {
   padding-top: 4em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -539,7 +453,11 @@ a {
   transition: all 200ms ease;
 }
 
-@media screen and (max-width: 1015px) {
+
+
+
+
+@media screen and (max-width: 1250px) {
   .container {
     height: 4em;
     width: 100vw;
@@ -564,22 +482,28 @@ a {
     z-index: 1;
   }
 }
-@media screen and (max-width: 1015px) and (max-width: 960px) {
-  #home {
-    width: 98%;
-  }
 
-  .about {
+
+@media screen and (max-width: 1250px) {
+
+  .aboutme {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width: 95%;
   }
 
+  .aboutme .about-card {
+    width: 90%;
+    min-width: 20em;
+    overflow: hidden;
+  }
   section {
     min-width: 100px;
   }
 
   .title {
+    margin-top: 2%;
     min-width: 22em;
     font-size: 0.6em;
     margin-left: 6em;
@@ -588,17 +512,12 @@ a {
     line-height: 2em;
   }
 
-  .about {
-    width: 100%;
-  }
-  .about .about-card {
-    width: 90%;
-    min-width: 20em;
-    overflow: hidden;
-  }
-  .about table {
-    min-width: 100%;
-  }
+
+
+
+
+
+
 
   #skill .content {
     display: none;
@@ -630,10 +549,10 @@ a {
   #skill .content-mobile li {
     line-height: 2.2em;
   }
-
   .heading {
     margin-bottom: 3em;
   }
+
 
   .card .card-content {
     pointer-events: none;
@@ -642,24 +561,15 @@ a {
   .card .card-title::after {
     transform: scaleX(1);
   }
-
   #footer i {
     margin: 0 0.4em;
   }
-
   #projects .card {
     margin: 2em 0;
     padding: 7em 0;
   }
 }
-@media screen and (max-width: 1015px) and (max-width: 570px) {
-  .title .lastNumber {
-    display: flex;
-  }
-  .title .line {
-    height: 20em;
-  }
-}
+
 ::-webkit-scrollbar {
   width: 0.8em;
 }
@@ -708,26 +618,6 @@ a {
 
 
 
-
-
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-/* 
-.about .article-title { margin-bottom: 15px; }
-
-.about-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
-
-.about-text p { margin-bottom: 15px; } */
 
 
 
